@@ -24,6 +24,7 @@ if password:
     tn.write(b"int g0/1\n")
     tn.write(b"ip address 172.16.1.1 255.255.255.0\n")
     tn.write(b"exit\n")
+    
     tn.write(b"ip dhcp exclude 172.16.1.1 172.16.1.100\n")
     tn.write(b"ip dhcp pool R1\n")
     tn.write(b"network 172.16.1.0 255.255.255.0\n")
